@@ -20,7 +20,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/chats", chatRoutes);
 app.use("/api/message", messageRoutes);
 
-// ------------------------------------Deployment----------------------------
+// ------------------------------------Deployment-------------------------------
 
 const __dirname1 = path.resolve();
 if (process.env.NODE_ENV === "production") {
