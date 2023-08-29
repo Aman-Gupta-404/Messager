@@ -103,7 +103,7 @@ function MyChats({ fetchAgain }) {
                 >
                   <Text>
                     {!singleChat.isGroupChat ? (
-                      getSender(loggedUser, singleChat.users)
+                      getSender(user, singleChat.users)
                     ) : (
                       <>{singleChat.chatName}</>
                     )}
