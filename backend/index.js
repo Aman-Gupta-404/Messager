@@ -48,7 +48,7 @@ const server = app.listen(PORT, console.log(`Server active on port ${PORT}`));
 const io = require("socket.io")(server, {
   pingTimeout: 60000, //waiting period to check for any active connection
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
   },
 });
 
